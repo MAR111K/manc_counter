@@ -12,7 +12,7 @@ const initializeTelegramSDK = async () => {
     console.log("Инициализация окружения Telegram");
     init();
     miniApp.mount();
-    miniApp.setHeaderColor("#c4c4c4");
+    miniApp.setHeaderColor("#000000");
     miniApp.setBackgroundColor("#ffffff");
   } catch (error) {
     console.error("Ошибка при инициализации Telegram:", error);

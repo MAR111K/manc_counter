@@ -82,6 +82,11 @@ function App() {
     setGame(true);
     localStorage.setItem("game", "true");
   };
+
+  const removeGame = () => {
+    setGame(false);
+    localStorage.removeItem("game");
+  };
   return (
     <>
       {game ? (
@@ -98,6 +103,14 @@ function App() {
               />
               <Button icon="pi pi-plus" onClick={() => addUser()}></Button>
             </div>
+            <Button
+              style={{ width: "100%" }}
+              label="Закончить игру"
+              severity="danger"
+              icon="pi pi-trash"
+              size="small"
+              onClick={removeGame}
+            />
           </div>
 
           <div className="list">
